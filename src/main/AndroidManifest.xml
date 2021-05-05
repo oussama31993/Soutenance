@@ -12,6 +12,9 @@
         <activity android:name=".AjouterRegle"
             >
         </activity>
+        <activity android:name=".ChatActivity"
+            >
+        </activity>
         <activity android:name=".SendMessage"
             >
         </activity>

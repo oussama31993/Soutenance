@@ -70,7 +70,10 @@ class  ExpertActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelec
                 Toast.makeText(this,"profil clicked", Toast.LENGTH_SHORT).show()
             }
             R.id.nav_message->{
-                Toast.makeText(this,"message clicked", Toast.LENGTH_SHORT).show()
+                var intent=Intent(this, ChatActivity::class.java)
+
+                startActivity(intent)
+
             }
             R.id.nav_signout->{
                 FirebaseAuth.getInstance().signOut()
