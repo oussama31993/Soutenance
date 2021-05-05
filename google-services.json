@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "898863653459",
+    "project_id": "soutenance-f37c1",
+    "storage_bucket": "soutenance-f37c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898863653459:android:6dc7f4be4173c278395ca6",
+        "android_client_info": {
+          "package_name": "com.example.soutenance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898863653459-qp4smov6829plr0papd6sodojhkci322.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG2oQLGBNKE1UxcKvgv0YwZxQU8gyCztU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898863653459-qp4smov6829plr0papd6sodojhkci322.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

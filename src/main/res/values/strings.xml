@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Soutenance</string>
+    <string-array name="spin">
+        <item>Electricien</item>
+        <item>Planitifateur</item>
+        <item>Inspecteur</item>
+        <item>Chaudronnier</item>
+        <item>Mecanicien</item>
+        <item>Preparateur</item>
+    </string-array>
+</resources>
