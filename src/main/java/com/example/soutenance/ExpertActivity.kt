@@ -71,7 +71,7 @@ class  ExpertActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelec
             }
             R.id.nav_message->{
                 var intent=Intent(this, ChatActivity::class.java)
-
+                intent.putExtra("name",text_user.text.toString())
                 startActivity(intent)
 
             }

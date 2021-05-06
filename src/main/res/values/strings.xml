@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Soutenance</string>
+    <string name="api_key">zvt3hmpkexk2</string>
     <string-array name="spin">
+
         <item>Electricien</item>
         <item>Planitifateur</item>
         <item>Inspecteur</item>
