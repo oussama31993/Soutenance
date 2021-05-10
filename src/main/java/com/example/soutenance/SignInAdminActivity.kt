@@ -1,13 +1,10 @@
 package com.example.soutenance
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_signin_admin.*
 class SignInAdminActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth

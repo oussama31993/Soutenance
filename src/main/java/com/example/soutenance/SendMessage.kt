@@ -19,7 +19,7 @@ class SendMessage: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.send_message)
+      //  setContentView(R.layout.send_message)
         val usr = auth.currentUser
         val uid = usr.uid
 
