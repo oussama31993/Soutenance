@@ -2,12 +2,8 @@ package com.example.soutenance
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
-import android.graphics.ImageDecoder
-import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
-import androidx.annotation.RequiresApi
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ListenerRegistration
 import com.xwray.groupie.GroupAdapter
@@ -74,14 +70,14 @@ class Chat: AppCompatActivity() {
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.P)
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == RC_SELECT_IMAGE && resultCode == Activity.RESULT_OK &&
             data != null && data.data != null) {
             val selectedImagePath = data.data
 
-            val selectedImageBmp =getCapturedImage(selectedImagePath)
+            val selectedImageBmp = MediaStore.Images.Media.getBitmap(contentResolver, selectedImagePath)
+
             val outputStream = ByteArrayOutputStream()
 
             selectedImageBmp.compress(Bitmap.CompressFormat.JPEG, 90, outputStream)
@@ -95,18 +91,6 @@ class Chat: AppCompatActivity() {
                 FirestoreUtil.sendMessage(messageToSend, currentChannelId)
             }
         }
-    }
-
-    @RequiresApi(Build.VERSION_CODES.P)
-    private fun getCapturedImage(selectedImagePath: Uri?):Bitmap {
-    val bitmap=when{
-        Build.VERSION.SDK_INT<28->MediaStore.Images.Media.getBitmap(contentResolver,selectedImagePath)
-    else -> {
-        val source=ImageDecoder.createSource(contentResolver, selectedImagePath!!)
-        ImageDecoder.decodeBitmap(source)
-    }
-    }
-        return bitmap
     }
 
     private fun updateRecyclerView(messages: List<Item>) {

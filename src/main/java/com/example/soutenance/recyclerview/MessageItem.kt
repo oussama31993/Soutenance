@@ -8,7 +8,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.xwray.groupie.kotlinandroidextensions.Item
 import com.xwray.groupie.kotlinandroidextensions.ViewHolder
 import kotlinx.android.synthetic.main.item_image_message.*
-import kotlinx.android.synthetic.main.other_message.*
 import java.text.SimpleDateFormat
 import org.jetbrains.anko.backgroundResource
 import org.jetbrains.anko.wrapContent
@@ -25,7 +24,7 @@ abstract class MessageItem(private val message: Message)
     private fun setTimeText(viewHolder: ViewHolder) {
         val dateFormat = SimpleDateFormat
                 .getDateTimeInstance(SimpleDateFormat.SHORT, SimpleDateFormat.SHORT)
-        viewHolder.txtMyMessageTime.text = dateFormat.format(message.time)
+                viewHolder.textView_message_time.text = dateFormat.format(message.time)
     }
 
     private fun setMessageRootGravity(viewHolder: ViewHolder) {

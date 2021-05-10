@@ -54,9 +54,7 @@ class ChatActivity:AppCompatActivity() {
             intent.putExtra(AppConstants.USER_NAME,item.person.nom)
             intent.putExtra(AppConstants.USER_ID,item.userId)
             startActivity(intent)
-
-
-        }
+ }
     }
 
 }

@@ -2,6 +2,7 @@
     <string name="app_name">Soutenance</string>
     <string name="api_key">zvt3hmpkexk2</string>
     <string name="soutenance">Soutenance</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
     <string-array name="spin">
 
         <item>Electricien</item>
